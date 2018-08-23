@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+	"test-mochaawesome": "nyc --reporter=html mocha test/*.js --reporter mochawesome --exit",
   },
   "repository": {
     "type": "git",
